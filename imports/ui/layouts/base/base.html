@@ -1,0 +1,29 @@
+<body class="nav-md">
+</body>
+<template name="BaseLayout">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    {{> menu_profile}}
+
+                    {{> side_bar_menu}}
+                    
+                    {{> menu_footer}}
+                </div>
+            </div>
+
+            {{> top_navigation}}
+
+            <main>
+                {{> Template.dynamic template=main}}
+            </main>
+
+            {{> footer}}8i
+
+        </div>
+    </div>
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+</template>
